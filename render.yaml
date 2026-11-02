@@ -1,0 +1,23 @@
+# Render Blueprint for the TikTok -> Bedrock bridge (free tier).
+# Deploy: Dashboard > New > Blueprint, point it at the repo containing this
+# file, and it will create ONE free web service from bridge/.
+# This file is only a starting point — Render still asks you to confirm
+# env vars in the dashboard. Do NOT put a TikTok password anywhere here;
+# the bridge only ever uses a username.
+services:
+  - type: web
+    name: tiktok-bedrock-bridge
+    runtime: node
+    plan: free
+    rootDir: bridge
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: BRIDGE_HOST
+        value: 0.0.0.0
+      - key: TIKTOK_USERNAME
+        sync: false
+      - key: POLL_KEY
+        sync: false
+      - key: TEST_KEY
+        sync: false

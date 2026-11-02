@@ -1,0 +1,87 @@
+{
+  "bridgePort": 3001,
+  "pollSeconds": 2,
+  "defaults": {
+    "announceInGame": true,
+    "maxEventsPerPoll": 20
+  },
+  "cooldownsSeconds": {
+    "likeMilestone": 10,
+    "gift": 3,
+    "chatCommand": 5
+  },
+  "likeMilestones": {
+    "everyLikes": 100,
+    "actions": [
+      { "type": "give", "item": "minecraft:diamond", "count": 1 },
+      { "type": "say", "text": "Thanks for the likes! The crowd sent diamonds." }
+    ]
+  },
+  "gifts": {
+    "rose": [
+      { "type": "summon", "entity": "minecraft:chicken", "count": 1 }
+    ],
+    "tiktok": [
+      { "type": "give", "item": "minecraft:cookie", "count": 3 }
+    ],
+    "heart": [
+      { "type": "effect", "effect": "regeneration", "seconds": 10, "amplifier": 0 }
+    ],
+    "perfume": [
+      { "type": "give", "item": "minecraft:gold_ingot", "count": 2 }
+    ],
+    "donut": [
+      { "type": "give", "item": "minecraft:cake", "count": 1 }
+    ],
+    "default": [
+      { "type": "give", "item": "minecraft:emerald", "count": 1 }
+    ]
+  },
+  "chatCommands": {
+    "!creeper": [
+      { "type": "summon", "entity": "minecraft:creeper", "count": 1 }
+    ],
+    "!zombie": [
+      { "type": "summon", "entity": "minecraft:zombie", "count": 2 }
+    ],
+    "!skeleton": [
+      { "type": "summon", "entity": "minecraft:skeleton", "count": 1 }
+    ],
+    "!spider": [
+      { "type": "summon", "entity": "minecraft:spider", "count": 1 }
+    ],
+    "!chicken": [
+      { "type": "summon", "entity": "minecraft:chicken", "count": 3 }
+    ],
+    "!diamond": [
+      { "type": "give", "item": "minecraft:diamond", "count": 1 }
+    ],
+    "!heal": [
+      { "type": "effect", "effect": "instant_health", "seconds": 1, "amplifier": 1 }
+    ],
+    "!storm": [
+      { "type": "weather", "value": "thunder" }
+    ],
+    "!rain": [
+      { "type": "weather", "value": "rain" }
+    ],
+    "!clear": [
+      { "type": "weather", "value": "clear" }
+    ],
+    "!day": [
+      { "type": "time", "value": "day" }
+    ],
+    "!night": [
+      { "type": "time", "value": "night" }
+    ],
+    "!xp": [
+      { "type": "xp", "amount": 10 }
+    ]
+  },
+  "notes": [
+    "Edit this file, then restart the bridge only. The Bedrock addon does not need to be re-imported.",
+    "No instant-kill, ban, kick, TNT, Wither or Ender Dragon events are included by default. Add them only if you want a harder stream.",
+    "Summoned mobs appear near the nearest player, not on top of them, so they cannot instantly kill the streamer.",
+    "Like milestones are cumulative: every 100 likes after the last milestone, not every single like."
+  ]
+}

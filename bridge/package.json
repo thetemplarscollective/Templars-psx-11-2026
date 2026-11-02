@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "tiktok-live-connector": "^2.5.0"
+  },
+  "description": "Local bridge between TikTok Live (username-only, no password) and a Minecraft Bedrock server addon. Aternos variant: bridge can run on Render (public URL), addon polls GET /events. bot.js is in ../bot/ and is a SEPARATE, UNTESTED fallback \u2014 it is NOT installed with this bridge, because bedrock-protocol failed to build on Node 24 in testing (raknet-native cmake-js error).",
+  "license": "MIT",
+  "main": "server.js",
+  "name": "tiktok-bedrock-bridge",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "commonjs",
+  "version": "1.0.0"
+}
