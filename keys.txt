@@ -1,0 +1,9 @@
+# Templar Hub keys - one key per line.
+# PREMIUM-... keys unlock forever (no ads, no daily key).
+# FREE-... keys unlock for one session only (get a new key tomorrow).
+# Lines starting with # are comments and are ignored.
+# Dylan: add real keys here when you sell / give them out.
+# Do NOT put a real working premium key in a public file unless you mean to share it.
+# Example format (these are NOT real keys):
+# PREMIUM-XXXX-XXXX
+# FREE-XXXX-XXXX
